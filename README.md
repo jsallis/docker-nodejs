@@ -1,4 +1,4 @@
-# docker-jenkins
+# docker-nodejs
 
 Docker container for running Node.js apps.
 
