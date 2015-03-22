@@ -8,7 +8,7 @@ A pre-built image is available at the [Docker Hub Registry](https://registry.hub
 
 ##### Print node.js version
 ```
-$ docker run jsallis/nodejs nodejs -v                                                                ⏎ ◼
+$ docker run jsallis/nodejs nodejs -v
 v0.10.37
 ```
 
