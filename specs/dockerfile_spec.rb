@@ -1,5 +1,6 @@
 require "serverspec"
 require "docker"
+require_relative "spec_helper"
 
 describe "Dockerfile" do
   before(:all) do
@@ -14,7 +15,7 @@ describe "Dockerfile" do
     expect(package("build-essential")).to be_installed
   end
 
-  it "has node installed" do
-    expect(command("node --version").stdout).to match(/v0.12/)
+  it "has node version #{NODE_VERSION} installed" do
+    expect(command("node --version").stdout).to match(/v#{NODE_VERSION}/)
   end
 end
